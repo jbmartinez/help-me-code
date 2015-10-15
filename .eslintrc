@@ -1,0 +1,21 @@
+{
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "brace-style": [
+        2,
+        "1tbs",
+        { "allowSingleLine": true }
+      ],
+      "camelcase": 1,
+      "new-cap": 0,
+      "no-underscore-dangle": 0,
+      "quotes": [
+        2,
+        "single",
+        "avoid-escape"
+      ],
+      "strict": 0
+    }
+}

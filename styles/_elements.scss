@@ -1,0 +1,39 @@
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+.toolbar {
+  margin: 0.8rem 0 0.4rem;
+}
+#js-editor, #html-editor, #css-editor {
+    /*position: absolute;*/
+    position: relative;
+    /*top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    height: 500px; /* change */
+}
+#output {
+  font-family: Consolas, monospace;
+  background: #272822;
+  color: #E0FFDF;
+  overflow: auto;
+  padding: 0.3rem 1rem;
+  height: 500px; /* change */
+}
+#preview {
+  width: 100%;
+  height: 500px; /* change */
+  border: none;
+  overflow: auto;
+}
+.panel {
+  vertical-align: top;
+  // width: 49%;
+  display: inline-block;
+
+  &:first-child {
+    margin-right: 7vw;
+  }
+}
