@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pairing programming test</title>
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen" charset="utf-8">
+</head>
+<body>
+  <header>
+    <div class="pure-menu pure-menu-horizontal">
+      <a href="#" class="pure-menu-heading pure-menu-link">Gimme a name</a>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Help</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="main pure-g">
+    <div class="panel pure-u-11-24">
+      <div class="toolbar">
+        <button id="run" class="pure-button pure-button-primary" onclick="run()">run</button>
+        <button class="pure-button" onclick="TogetherJS(this); return false;">collaborate</button>
+        <button class="pure-button" onclick="save()">Save</button>
+      </div>
+      <rg-tabs onopen="{ tabOpened }">
+        <rg-tab heading="js" active="true">
+          <div id="js-editor"></div>
+        </rg-tab>
+        <rg-tab heading="html">
+          <div id="html-editor"></div>
+        </rg-tab>
+        <rg-tab heading="css">
+          <div id="css-editor"></div>
+        </rg-tab>
+      </rg-tabs>
+    </div>
+    <div class="panel pure-u-11-24">
+      <div class="toolbar">
+        <button class="pure-button" onclick="clearOutput()">clear</button>
+      </div>
+      <rg-tabs>
+        <rg-tab heading="output" active="true">
+          <div id="output"></div>
+        </rg-tab>
+        <rg-tab heading="preview">
+          <iframe id="preview"></iframe>
+        </rg-tab>
+      </rg-tabs>
+    </div>
+  </div>
+
+<script src="http://cdn.jsdelivr.net/riot/2.2.4/riot.min.js"></script>
+<script src="assets/js/tags/rg-tab.min.js" type="text/javascript"></script>
+<script src="ace/ace.js" type="text/javascript"></script>
+<script src="console.js" type="text/javascript"></script>
+<script type="text/javascript">
+  // TogetherJS configuration goes here
+  var TogetherJSConfig_siteName = 'test';
+  var TogetherJSConfig_cloneClicks = true;
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+</body>
+</html>
